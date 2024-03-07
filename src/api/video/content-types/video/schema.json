@@ -1,0 +1,75 @@
+{
+  "kind": "collectionType",
+  "collectionName": "videos",
+  "info": {
+    "singularName": "video",
+    "pluralName": "videos",
+    "displayName": "Video"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "id_video_of_yt": {
+      "type": "uid"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "url_video_yt": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "thumbnail": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "published": {
+      "type": "datetime"
+    },
+    "duration": {
+      "type": "biginteger"
+    },
+    "view": {
+      "type": "biginteger"
+    },
+    "channel_video_id": {
+      "type": "uid"
+    },
+    "category": {
+      "type": "string"
+    },
+    "incorporated_url": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "likes": {
+      "type": "biginteger"
+    },
+    "deslikes": {
+      "type": "biginteger"
+    }
+  }
+}

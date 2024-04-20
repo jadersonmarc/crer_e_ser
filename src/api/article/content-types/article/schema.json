@@ -32,17 +32,6 @@
         "institute event"
       ]
     },
-    "image_url": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
     "news_url": {
       "type": "media",
       "multiple": true,
@@ -56,6 +45,9 @@
     },
     "slug": {
       "type": "uid"
+    },
+    "image_url": {
+      "type": "string"
     }
   }
 }

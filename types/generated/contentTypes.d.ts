@@ -381,9 +381,9 @@ export interface ApiArticleArticle extends Schema.CollectionType {
     category: Attribute.Enumeration<
       ['event', 'social action', 'institute event']
     >;
-    image_url: Attribute.Media;
     news_url: Attribute.Media;
     slug: Attribute.UID;
+    image_url: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -449,24 +449,22 @@ export interface ApiVideoVideo extends Schema.CollectionType {
     singularName: 'video';
     pluralName: 'videos';
     displayName: 'Video';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    id_video_of_yt: Attribute.UID;
     title: Attribute.String;
     description: Attribute.Text;
-    url_video_yt: Attribute.Media;
-    thumbnail: Attribute.Media;
     published: Attribute.DateTime;
-    duration: Attribute.BigInteger;
     view: Attribute.BigInteger;
     channel_video_id: Attribute.UID;
     category: Attribute.String;
-    incorporated_url: Attribute.Media;
-    likes: Attribute.BigInteger;
-    deslikes: Attribute.BigInteger;
+    thumbnail: Attribute.String;
+    video_url: Attribute.String;
+    video_id: Attribute.String;
+    content: Attribute.Blocks;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
